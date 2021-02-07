@@ -1,0 +1,6 @@
+[submodule "scripts/class-bot"]
+	path = scripts/class-bot
+	url = https://github.com/SpicyRicecaker/class-bot.git
+[submodule "scripts/attendance-bot"]
+	path = scripts/attendance-bot
+	url = https://github.com/SpicyRicecaker/attendance-bot.git
