@@ -1,0 +1,11 @@
+# Painting
+*.kra~
+*.png
+
+# Latex output
+*.aux
+*.log
+*.out
+*.pdf
+*.gz
+*.toc
