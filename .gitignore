@@ -14,4 +14,4 @@
 *.toc
 
 # Intermediary res format
-res.*
+**/res.*
