@@ -1,0 +1,17 @@
+# Painting
+*.kra~
+*.png*
+*.jpeg*
+*.jpg*
+
+
+# Latex output
+*.aux
+*.log
+*.out
+*.pdf
+*.gz
+*.toc
+
+# Intermediary res format
+res.*

@@ -1,9 +1,0 @@
-# All krita output
-*.png
-*.kra~
-*.pdf
-
-# All latex output
-*.aux
-*.log
-*.synctex.gz
