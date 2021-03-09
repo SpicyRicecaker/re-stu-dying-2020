@@ -1,0 +1,92 @@
+% Font size, paper type
+\documentclass[12pt]{article}
+% Aesthetic margins
+\usepackage[margin=1in]{geometry}
+% Core math packages,
+% Mathtools loads amsmath, and amsmath gives basic math symbs
+% Amsfonts & amssymb are misc. symbols you might need
+\usepackage{mathtools, amsfonts, amssymb}
+% Links in a pdf
+\usepackage{hyperref}
+% Use in pictures, graphs, and figures
+\usepackage{graphicx}
+% Header package
+\usepackage{fancyhdr}
+% Underlining with line breaks
+\usepackage{ulem}
+% Adjust accordingly given warning messages
+\setlength{\headheight}{15pt}
+% So we can more easily format text with pictures
+\usepackage{float}
+% Images and drawing graphs
+\usepackage{tikz}
+
+% Sets footer
+\pagestyle{fancy}
+% Removes default footer style
+\fancyhf{}
+
+\rhead{
+  Shengdong Li
+  Calc 3
+}
+
+\rfoot{
+  Page \thepage{}
+}
+
+% Makes links look more appealing
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% \usepackage{indentfirst}
+
+\begin{document}
+\title{Lab 6 Gravity Car}
+\author{by Shengdong Li}
+\date{31 March 2021}
+\maketitle
+
+\section{Research Question}
+
+How does the mass of a gravity car affect its total distance travelled down a ramp? 
+
+\section{Background Paragraph}
+
+There could be several forces at work in a gravity car. One possible force could the the force of kinetic friction that acts on the wheels of the car. This force is given by the formula \(F_k=U_k\cdot F_N\). The normal force, the normal force is based off of newton's third law of motion, which states that every reaction has an equal and opposite reaction. For the gravity car, the force pushing down the car in this case, is its own weight. And as a derivitive of Newton's second law of motion, \(f=ma\), the force of weight is \(w=mg\) where \(g\) is the gravitational acceleration constant (\(9.8\frac{m}{s^2}\) on Earth), and \(m\) is the mass of the car. This means that the kinetic friction of the car acting against it is proportional to its own weight. However, another force acting on the car pushing it forward is actually its own weight acting against the slope of the ramp. The \(x\) and \(y\) components of a gravitational cars force can be defined by \(m=\sin(\theta)\) and \(m=\cos(\theta)\) respectively. This means that while the car's weight does contribute to the increase in kinetic friction pulling it back, it also simultaneously increases the force pushing it forwards, down the ramp. The purpose of this lab is to discern which force is greater, and if the mass of the gravity car really does increase or decrease its total distance travelled down a ramp.
+
+\section{Varialbe and Explanations}
+
+\subsection{Independent Variable} Increasing the mass of a gravity car would decrease its total distance travelled, since as the mass of the gravity car increases its weight force increases, which increases the kinetic friction pulling the car back.
+
+\subsection{Dependent Variable} Distance travelled
+
+\subsection{Controlled Variables}
+\begin{list}
+    \item Coefficient of friction between ramp and wheels (material of wheels and ramp)
+    \item Angle of ramp
+    \item Starting height of gravity car on ramp
+\end{list}
+
+\subsection{Lab Setup Photos}
+
+Gotta make the car first
+\subsection{Procedure of the Lab}
+
+Put car x meters at the top of the ramp
+
+Let go of car, start timer
+
+Once car comes to a complete stop, stop timer
+
+Measure total distance the car traveled
+
+\subsection{Raw Data Table}
+
+Tables in latex are scuffed??
+
+\end{document}
