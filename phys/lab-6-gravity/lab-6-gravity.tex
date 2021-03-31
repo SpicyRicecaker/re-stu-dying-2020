@@ -170,23 +170,56 @@ The standard unit of mass is the kilogram. Acceleration is defined as the change
 \end{align*}
 
 \section{Calculated Data Table}
-% \begin{table}[H]
-% 	\centering
-% 	\begin{tabularx}{0.75\textwidth}{|c| * {3}}
-% 		\hline
-% 		Mass of Car (g) & Total distance car travelled (m) \\ \hline
-% 		116             & 2.4                              \\ \hline
-% 		125             & 5                                \\ \hline
-% 		135             & 5                                \\ \hline
-% 		145             & 4                                \\ \hline
-% 		155             & 4.4                              \\ \hline
-% 		165             & 1.5                              \\ \hline
-% 		174             & 3.75                             \\ \hline
-% 		184             & 1.55                             \\ \hline
-% 		194             & 2.25                             \\ \hline
-% 		204             & 0.8                              \\ \hline
-% 	\end{tabularx}
-% \end{table}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.75\textwidth}{|c|X|}
+		\hline
+		Mass of Car (g) \(\pm\ .5\)  & Average distance car travelled (m) \\ \hline
+		116             & 171.5 \(\pm\) 2.4                              \\ \hline
+		125             & 175.3 \(\pm\) 5                                \\ \hline
+		135             & 174.4 \(\pm\) 5                                \\ \hline
+		145             & 166.7 \(\pm\) 4                                \\ \hline
+		155             & 167.1 \(\pm\) 4.4                              \\ \hline
+		165             & 167.8 \(\pm\) 1.5                              \\ \hline
+		174             & 172.0 \(\pm\) 3.75                             \\ \hline
+		184             & 176.9 \(\pm\) 1.55                             \\ \hline
+		194             & 175.3 \(\pm\) 2.25                             \\ \hline
+		204             & 175.5 \(\pm\) 0.8                              \\ \hline
+	\end{tabularx}
+\end{table}
 
+\section{Graph and Analysis}
+
+\begin{figure}[H]
+	\centering
+	\textbf{The effect of mass on the distance gravity car travelled.}\medskip\par
+	\includegraphics[scale=0.3]{graph.png}
+	\caption{\(y=0.04x+165.9\) }
+\end{figure}
+
+The line of best fit has an extremely small slope of \(0.04\), to the point that it is almost flat. The data points in between fluctuate as well. This suggests that there is no relationship between mass of the car and the distance it travels; distance travelled is constant regardless of mass
+
+\section{Conclusion}
+The distance the car gravity car travels is constant as mass of the car increases. This is because, while the line of best fit has a slightly positive relationship, it's slope is very low at \(0.04\) and the points fluctuate around and have high uncertainty. This is further supported by the fact that one gradient line has a slope of \(0\). At a mass of \(116g\), the car traveled an average distance of around \(171.5cm\), but from masses \(145--165\) the distance the car travelled was actually slightly less than the beginning, an average of \(166cm\). Only at a mass of \(174g\) did the car travel an average distance of \(172.375cm\). This goes against the original hypothesis that the car would travel less distance as mass increases. Why is this?
+
+Upon closer inspection of the forces at work, it can be seen that there are two distinct phases of forces acting on the gravity car: when the car goes down the ramp, and when the car is travelling on the ground after it has accelerated on the ramp. On the ramp, there is a greater force pushing on the gravity car with more Scrabble pieces, since the \(x\) component of the weight force is dependent on mass \(w_x = w\sin(\theta)\). But the thing is, even though there is a bigger force acting the bigger car, the smaller car and the bigger car both move down the ramp at the same speed. Newtons second law of motion is that acceleration is proportional to force but inversely proportional to mass, that \(a=\frac{F}{m}\). When the weight component is substituted into the equation, the resulting equation \(a=\frac{mg\sin(\theta)}{m}\), the \(m\)s cancel, and the only thing that's left is \(a=g\sin(\theta)\). A greater force or push does not equal greater acceleration in this case. Both heavy and light car reach the bottom of the ramp at the same speed. Then, when the car is moving on the ground, there is a large kinetic friction force pulling the heavier car back. 
+\begin{align*}
+	\sum F_{x}&=-F_{k} \\
+&=-u_{k}\cdot F_{N} \\
+&=-u_{k}\cdot mg
+\end{align*}
+But if Newton's second law is applied again it can be seen that the decrease in acceleration of both cars is actually equal
+\begin{align*}
+\sum F_{x}&=ma\\
+ma&=-u_{k}\cdot mg\\
+a&=-u_{k}\cdot g\\
+\end{align*}
+It all goes back to Newtons first law of motion, that heavier objects have more intertia and so require more forces to both stop and move. 
+
+\section{Evaluation of Strengths and Weaknesses}
+Because this was an experiment done at home due to quarantine, there were many limitations and possible sources of error in the experiment. One such source of error was the horizontal positioning of the gravity car on the ramp. While the height of the car on the ramp was part of the control variablees, the width of the ramp made it much harder to position the car correctly horizontally everytime. While by itself this might not have been much of an issue, the other problem was that the floorboards were uneven. Sometimes if the car was positioned a couple centimeters to the left it would bump into more crevices in the floorboards. While the material of the floor should've stayed the same, it ultimately could've caused the large uncertainty and fluctuations in the data table.
+
+\section{Improvements}
+There are many things that could be done in the future to negate this issue. 
 
 \end{document}
