@@ -26,10 +26,11 @@
 \usepackage[utf8]{inputenc}
 % Set the font to arial
 % \usepackage{fontspec}
-\usepackage{mathspec}
-\setmainfont{Arial}
-\setmathrm{Arial}
-\setmathfont(Digits,Latin){Arial}
+% \usepackage{mathspec}
+% \setmainfont{Arial}
+% \setmathrm{Arial}
+% \setmathfont(Digits,Latin){Arial}
+\usepackage{tabularx}
 
 % Sets footer
 \pagestyle{fancy}
@@ -37,20 +38,20 @@
 \fancyhf{}
 
 \rhead{
-  Shengdong Li
-  Calc 3
+Shengdong Li
+P1
 }
 
 \rfoot{
-  Page \thepage{}
+Page \thepage{}
 }
 
 % Makes links look more appealing
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=cyan,
 }
 
 % \usepackage{indentfirst}
@@ -63,40 +64,129 @@
 
 \section{Research Question}
 
-How does the mass of a gravity car affect its total distance travelled down a ramp? 
+How does the mass of a gravity car affect its total distance travelled down a ramp?
 
-\section{Background Paragraph}
+\section{Background Paragraphs}
 
-There could be several forces at work in a gravity car. One possible force could the the force of kinetic friction that acts on the wheels of the car. This force is given by the formula \(F_k=U_k\cdot F_N\). The normal force, is based off of Newton's third law of motion, which states that every reaction has an equal and opposite reaction. For the gravity car, the force pushing down the car in this case, is its own weight. And as a derived from Newton's second law of motion, \(F=ma\), the force of weight is \(w=mg\) where \(g\) is the gravitational acceleration constant (\(9.8\frac{m}{s^2}\) on Earth), and \(m\) is the mass of the car. This means that the kinetic friction of the car acting against it is proportional to its own weight. However, another force acting on the car pushing it forward is actually its own weight acting against the slope of the ramp. The \(x\) and \(y\) components of a gravitational car's force can be defined by \(w_x=w\sin(\theta)\) and \(w_y=w\cos(\theta)\) respectively. This means that while the car's weight does contribute to the increase in kinetic friction pulling it back, it also simultaneously increases the force pushing it forwards, down the ramp. The purpose of this lab is to discern which force is greater, and if the mass of the gravity car really does increase or decrease its total distance travelled down a ramp.
+\subsection{Forces}
+There are several forces at work in a gravity car. One force that acts against the movement of the gravity car forwards is the force of kinetic friction that acts on the wheels of the car. This force is given by the formula \(F_k=U_k\cdot F_N\). Another force that acts on the car is the normal force, which is based off of Newton's third law of motion: that every reaction has an equal and opposite reaction. For the gravity car, the force pushing down the car in this case, is its own weight, so the normal force would be its own weight applied by the ramp. As derived from Newton's second law of motion, \(F=ma\), the force of weight is \(w=mg\) where \(g\) is the gravitational acceleration constant (\(9.8\frac{m}{s^2}\) on Earth), and \(m\) is the mass of the car. This means that the kinetic friction of the car acting against it is proportional to its own weight. The force acting on the car and pushing it forwards is actually its own weight acting against the slope of the ramp. The \(x\) and \(y\) components of a gravitational car's force can be defined by \(w_x=w\sin(\theta)\) and \(w_y=w\cos(\theta)\) respectively.
+This means that while the car's weight does contribute to the increase in kinetic friction pulling it back, it also simultaneously increases the force pushing it forwards, down the ramp. The purpose of this lab is to discern which force is greater, and if the mass of the gravity car really does increase or decrease its total distance travelled down a ramp.
+
+\subsection{Mass and Acceleration}
+The standard unit of mass is the kilogram. Acceleration is defined as the change in velocity over time. Its standard units are \(\frac{m}{s^{2}}\). It can also define it using Newton's second law of motion, \(F=ma\), acceleration can be deriveed as \(\frac{F}{m}\). This equation will be key in showing how far the car travels, if \(m\) changes then clearly acceleration will change.
+
 
 \section{Variable and Explanations}
 
-\subsection{Independent Variable} \textbf{Mass of car} Increasing the mass of a gravity car would decrease its total distance travelled, since as the mass of the gravity car increases its weight force increases, which then raises the normal force of the ramp acting on the car, which finally increases the kinetic friction pulling the car back.
+\subsection{Independent Variable} \textbf{Mass of car} Increasing the mass of a gravity car would decrease its total distance travelled, since as the mass of the gravity car increases its weight force increases, which then raises the normal force of the ramp acting on the car, which finally increases the kinetic friction pulling thecar back.
 
 \subsection{Dependent Variable} \textbf{Distance car travels} The dependent variable will be measured using a tape measure, starting from the bottom of the ramp to where it stops moving.
 
 \subsection{Controlled Variables}
 \begin{itemize}
-    \item \textbf{Coefficient of friction between ramp and wheels (material of wheels and ramp)} This is a critcal variable to be controlled, since the kinetic friction constant has a huge impact on the actual kinetic friction holding the car back. If not controlled, then the effect of the car's weight could even be negible
-    \item \textbf{Angle of ramp} Has an effect on the \(x\) and \(y\) components of the weight force
-    \item \textbf{Starting height of gravity car on ramp} 
+	\item \textbf{Coefficient of friction between ramp/floor and wheels (material of wheels and ramp)} This is a critical variable to be controlled, since the kinetic friction constant has a huge impact on the actual kinetic friction a force pulling the car back. If not controlled, on rough surfaces with a high coefficient of friction the car could travel a considerably less distance and similarly, on smooth surfaces with a low coefficient of friction the car would travel a huge distance. To keep this constant, the material of the ramp and the floor must stay the same.
+	\item \textbf{Angle of ramp} The angle of the ramp has a huge effect on the \(x\) and \(y\) components of the weight force. When the ramp is angled high, then the car will be propelled forward by its \(x\) component weight force and travel a large distance. But conversely, if the ramp is angled low or not at all, then there will be little to no horizontal force pushing on the car and it might not even move. To keep it the same, the ramp will be positioned the same for every trial.
+	\item \textbf{Starting height of gravity car on ramp} The starting height of the gravity car on the ramp should stay the same because it affects the distance that the gravity car has to accelerate down the ramp, as well as affects the measured distance that the car actually travelled. To keep this the same, the gravity car must be put on the same position on the ramp every single time.
 \end{itemize}
 
-% \subsection{Lab Setup Photos}
+\section{Materials List}
+
+\begin{itemize}
+	\item 1 Ramp
+	\item 1 Piece of paper
+	\item 1 Pencil
+	\item 1 Gravity Car
+	\item 36 Scrabble Pieces (Weights)
+	\item 1 Measuring Tape
+	\item 1 Scale
+\end{itemize}
+
+\section{Lab Setup Photos/Sketch}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.11]{lab_setup.jpg}
+	\caption{\textit{Photo of lab setup.} To keep the angle of ramp and coefficient of frication between the ramp and wheels the same, once the ramp is set it will not be moved for the remainder of the trial.}
+\end{figure}
 
 % Gotta make the car first
-% \subsection{Procedure of the Lab}
+\section{Procedure of the Lab}
 
-% Put car x meters at the top of the ramp
+\begin{enumerate}
+	\item Measure and record the weight of the car
+	\item Put the car at the top of the ramp
+	\item Make sure that there is no one in the way, then let go of the car
+	\item Wait for the car to come to a complete stop
+	\item Measure the distance the car traveled from the bottom of the ramp to the very tip of the car's back wheels
+	\item Repeat steps 1--4 3 times, to get the data for 3 trials
+	\item Increase the independent variable, the mass of the gravity car, by adding 4 scrabble pieces to the top of the car. Repeat steps 1--6.
+	\item Repeat step 7 10 times, to get 10 different variations of the independent variable.
+\end{enumerate}
 
-% Let go of car, start timer
+\section{Raw Data Table}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.75\textwidth}{ |c| *{3}{X|}}
+		\hline
+		                            & \multicolumn{3}{c|}{Total distance car traveled (cm) \(\pm\ .05\)}                     \\ \hline
+		Mass of Car (g) \(\pm\ .5\) & Trial 1                                                            & Trial 2 & Trial 3 \\ \hline
+		116                         & 173                                                                & 173.1   & 168.3   \\ \hline
+		125                         & 181.3                                                              & 173.2   & 171.3   \\ \hline
+		135                         & 180                                                                & 170     & 173.2   \\ \hline
+		145                         & 169                                                                & 169.6   & 161.6   \\ \hline
+		155                         & 166.5                                                              & 175.3   & 171.5   \\ \hline
+		165                         & 166                                                                & 168.4   & 169     \\ \hline
+		174                         & 167.5                                                              & 173.6   & 175     \\ \hline
+		184                         & 179                                                                & 175.9   & 175.9   \\ \hline
+		194                         & 176.5                                                              & 172.4   & 176.9   \\ \hline
+		204                         & 175.2                                                              & 174.9   & 176.5   \\ \hline
+	\end{tabularx}
+\end{table}
 
-% Once car comes to a complete stop, stop timer
+\section{Sample Calculations}
+% \subsection{Formula for average distance travelled}
+\begin{align*}
+	\intertext{\textbf{Average Distance}}
+	\intertext{The formula for the average distance travelled, \(T_{average}\) is given by}
+	T_{average}              & = \frac{T_{1}+T_{2}+T_{3}}{3}
+	\intertext{\textit{Example} calculation of average distance at mass of \(116g\)}
+	                         & = \frac{173g+173.1g+168.3g}{3} \approx 171.5g                            \\
+	% \end{align*}
+	% \subsection{Formulas for propogation of uncertainty}
+	% \begin{align*}
+	\intertext{}
+	\intertext{\textbf{Propogation of Uncertainty}}
+	\intertext{The first way to propogate uncertainty is as follows}
+	Uncertainty\ T_{average} & = \frac{Uncertainty\ T_{1} + Uncertainty\ T_{2} + Uncertainty\ T_{3}}{3}
+	\intertext{\textit{Example} calculation of propogation of uncertainty at mass of \(116g\)}
+	                         & = \frac{.05 + .05 + .05}{3} = .05                                        \\
+	\intertext{}
+	% \end{align*}
+	% \begin{align*}
+	\intertext{The second way to propogate uncertainty is as follows}
+	Uncertainty              & = \frac{Range}{2} = \frac{T_{Biggest} - T_{Smallest}}{2}
+	\intertext{\textit{Example} calculation of uncertainty at mass of \(184g\) (rounding to nearest 1 significant figure)}
+	                         & = \frac{179-175.9}{2}=1.55=2
+\end{align*}
 
-% Measure total distance the car traveled
+\section{Calculated Data Table}
+% \begin{table}[H]
+% 	\centering
+% 	\begin{tabularx}{0.75\textwidth}{|c| * {3}}
+% 		\hline
+% 		Mass of Car (g) & Total distance car travelled (m) \\ \hline
+% 		116             & 2.4                              \\ \hline
+% 		125             & 5                                \\ \hline
+% 		135             & 5                                \\ \hline
+% 		145             & 4                                \\ \hline
+% 		155             & 4.4                              \\ \hline
+% 		165             & 1.5                              \\ \hline
+% 		174             & 3.75                             \\ \hline
+% 		184             & 1.55                             \\ \hline
+% 		194             & 2.25                             \\ \hline
+% 		204             & 0.8                              \\ \hline
+% 	\end{tabularx}
+% \end{table}
 
-% \subsection{Raw Data Table}
-
-% Tables in latex are scuffed??
 
 \end{document}
