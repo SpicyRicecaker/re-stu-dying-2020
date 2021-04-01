@@ -78,7 +78,7 @@ The standard unit of mass is the kilogram. Acceleration is defined as the change
 
 \section{Variable and Explanations}
 
-\subsection{Independent Variable} \textbf{Mass of car} Increasing the mass of a gravity car would decrease its total distance travelled, since as the mass of the gravity car increases its weight force increases, which then raises the normal force of the ramp acting on the car, which finally increases the kinetic friction pulling thecar back.
+\subsection{Independent Variable} \textbf{Mass of car} Increasing the mass of a gravity car would decrease its total distance travelled, since as the mass of the gravity car increases its weight force increases, which then raises the normal force of the ramp acting on the car, which finally increases the kinetic friction pulling the car back.
 
 \subsection{Dependent Variable} \textbf{Distance car travels} The dependent variable will be measured using a tape measure, starting from the bottom of the ramp to where it stops moving.
 
@@ -86,7 +86,7 @@ The standard unit of mass is the kilogram. Acceleration is defined as the change
 \begin{itemize}
 	\item \textbf{Coefficient of friction between ramp/floor and wheels (material of wheels and ramp)} This is a critical variable to be controlled, since the kinetic friction constant has a huge impact on the actual kinetic friction a force pulling the car back. If not controlled, on rough surfaces with a high coefficient of friction the car could travel a considerably less distance and similarly, on smooth surfaces with a low coefficient of friction the car would travel a huge distance. To keep this constant, the material of the ramp and the floor must stay the same.
 	\item \textbf{Angle of ramp} The angle of the ramp has a huge effect on the \(x\) and \(y\) components of the weight force. When the ramp is angled high, then the car will be propelled forward by its \(x\) component weight force and travel a large distance. But conversely, if the ramp is angled low or not at all, then there will be little to no horizontal force pushing on the car and it might not even move. To keep it the same, the ramp will be positioned the same for every trial.
-	\item \textbf{Starting height of gravity car on ramp} The starting height of the gravity car on the ramp should stay the same because it affects the distance that the gravity car has to accelerate down the ramp, as well as affects the measured distance that the car actually travelled. To keep this the same, the gravity car must be put on the same position on the ramp every single time.
+	\item \textbf{Starting height of gravity car on ramp} The starting height of the gravity car on the ramp should stay the same because it affects the distance that the gravity car has to accelerate down the ramp, as well as affects the measured distance that the car actually travelled. To keep this the same, the gravity car must be flush with the wall to keep it at the same heights at the time of release.
 \end{itemize}
 
 \section{Materials List}
@@ -200,26 +200,34 @@ The standard unit of mass is the kilogram. Acceleration is defined as the change
 The line of best fit has an extremely small slope of \(0.04\), to the point that it is almost flat. The data points in between fluctuate as well. This suggests that there is no relationship between mass of the car and the distance it travels; distance travelled is constant regardless of mass
 
 \section{Conclusion}
-The distance the car gravity car travels is constant as mass of the car increases. This is because, while the line of best fit has a slightly positive relationship, it's slope is very low at \(0.04\) and the points fluctuate around and have high uncertainty. This is further supported by the fact that one gradient line has a slope of \(0\). At a mass of \(116g\), the car traveled an average distance of around \(171.5cm\), but from masses \(145--165\) the distance the car travelled was actually slightly less than the beginning, an average of \(166cm\). Only at a mass of \(174g\) did the car travel an average distance of \(172.375cm\). This goes against the original hypothesis that the car would travel less distance as mass increases. Why is this?
+The distance the car gravity car travels is constant as mass of the car increases. This is because, while the line of best fit has a slightly positive relationship, it's slope is very low at \(0.04\) and the points fluctuate around and have high uncertainty. This is further supported by the fact that one gradient line has a slope of \(0\). At a mass of \(116g\), the car traveled an average distance of around \(171.5cm\), but from masses \(145-165\) the distance the car travelled was actually slightly less than the beginning, an average of \(166cm\). Only at a mass of \(174g\) did the car begin to have a slightly increasing average distance of \(172cm\), but this was almost the exact same distance traveled as the very first trial. This goes against the original hypothesis that the car would travel less distance as mass increases. This nondifference can be explained by Newton's First and Second Laws of motion.
 
-Upon closer inspection of the forces at work, it can be seen that there are two distinct phases of forces acting on the gravity car: when the car goes down the ramp, and when the car is travelling on the ground after it has accelerated on the ramp. On the ramp, there is a greater force pushing on the gravity car with more Scrabble pieces, since the \(x\) component of the weight force is dependent on mass \(w_x = w\sin(\theta)\). But the thing is, even though there is a bigger force acting the bigger car, the smaller car and the bigger car both move down the ramp at the same speed. Newtons second law of motion is that acceleration is proportional to force but inversely proportional to mass, that \(a=\frac{F}{m}\). When the weight component is substituted into the equation, the resulting equation \(a=\frac{mg\sin(\theta)}{m}\), the \(m\)s cancel, and the only thing that's left is \(a=g\sin(\theta)\). A greater force or push does not equal greater acceleration in this case. Both heavy and light car reach the bottom of the ramp at the same speed. Then, when the car is moving on the ground, there is a large kinetic friction force pulling the heavier car back. 
+Upon closer inspection of the forces at work, it can be seen that there are two distinct phases of forces acting on the gravity car: when the car goes down the ramp, and when the car is travelling on the ground after it has accelerated on the ramp. On the ramp, there is a greater force pushing on the gravity car with more Scrabble pieces, since the \(x\) component of the weight force is dependent on mass \(w_x = w\sin(\theta)\). But the thing is, even though there is a bigger force acting the bigger car, the smaller car and the bigger car both move down the ramp at the same speed. Newton's Second law of motion states acceleration is proportional to force but inversely proportional to mass, such that that \(a=\frac{F}{m}\). When the weight component is substituted into the equation, in the resulting equation the masses cancel.
+\begin{align*}
+	\sum F_x &= w\sin(\theta) \\
+	ma &= mg\sin(\theta) \\
+	a &= \frac{mg\sin(\theta)}{m}\\
+	\Aboxed{a &=g\sin(\theta)}
+\end{align*}
+A greater force or push does not equal greater acceleration in this case. Both heavy and light car reach the bottom of the ramp at the same speed. 
+
+Then, when the gravity car is moving on level ground, the only horizontal force is kinetic friction pulling the car back. 
 \begin{align*}
 	\sum F_{x}&=-F_{k} \\
 &=-u_{k}\cdot F_{N} \\
 &=-u_{k}\cdot mg
 \end{align*}
-But if Newton's second law is applied again it can be seen that the decrease in acceleration of both cars is actually equal
+In this case, a heavier car would result in a greater kinetic friction force backwards. But if Newton's second law is applied again it can be seen that the decrease in acceleration of both cars is actually equal once again
 \begin{align*}
 \sum F_{x}&=ma\\
 ma&=-u_{k}\cdot mg\\
-a&=-u_{k}\cdot g\\
+\Aboxed{a&=-u_{k}\cdot g}
 \end{align*}
 It all goes back to Newtons first law of motion, that heavier objects have more intertia and so require more forces to both stop and move. 
 
 \section{Evaluation of Strengths and Weaknesses}
-Because this was an experiment done at home due to quarantine, there were many limitations and possible sources of error in the experiment. One such source of error was the horizontal positioning of the gravity car on the ramp. While the height of the car on the ramp was part of the control variablees, the width of the ramp made it much harder to position the car correctly horizontally everytime. While by itself this might not have been much of an issue, the other problem was that the floorboards were uneven. Sometimes if the car was positioned a couple centimeters to the left it would bump into more crevices in the floorboards. While the material of the floor should've stayed the same, it ultimately could've caused the large uncertainty and fluctuations in the data table.
+Because this was an experiment done at home due to quarantine, there were many limitations and possible sources of error in the experiment. One such source of error was the horizontal positioning of the gravity car on the ramp. While the height of the car on the ramp was part of the control variables, the width of the ramp made it much harder to position the car correctly horizontally everytime. While by itself this might not have been much of an issue, the other problem was that the floorboards were uneven. Sometimes, if the car was positioned a couple centimeters to the left it would bump into more crevices in the floorboards, resulting in a lower distance travelled. While the material of the floor should've stayed the same, it ultimately could've caused the large uncertainty and fluctuations in the data table. Another source of error was that the axle of the car was partially broken, so it would sometimes veer slightly to the right. This would've resulted in some of the measured distances travelled being lower than they should've been.
 
 \section{Improvements}
-There are many things that could be done in the future to negate this issue. 
-
+There are many things that could be done in the future to address the car issues. One is to buy a new toy car that isn't broken, so it doesn't veer to the right. To address the issue of the horizontal alignment of the car causing the uneven material of the wooden floorboards to have an impact on the garage floor could've been used. Another thing that could be done is to mark a specific spot on the ramp to always position the car correctly on the ramp. 
 \end{document}
